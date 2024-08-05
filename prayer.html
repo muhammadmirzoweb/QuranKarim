@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namoz vaqtlari</title>
+    <link rel="website icon" type="png" href="/assents/svg/logo_new.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/prayer.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="/assents/svg/logo_new.png" class="nLogo" alt="">
+            <h1 class="header1">Namoz vaqtlari</h1>
+            <div class="divnmadr">
+                <select id="city" class="select-1">
+                    <option selected disabled>Tanlang...</option>
+                    <option value="Toshkent">Toshkent shaxri</option>
+                    <option value="Andijon">Andijon viloyati</option>
+                    <option value="Buxoro">Buxoro viloyati</option>
+                    <option value="Farg'ona">Farg'ona viloyati</option>
+                    <option value="Jizzax">Jizzax viloyati</option>
+                    <option value="Xorazm">Xorazm viloyati</option>
+                    <option value="Namangan">Namangan viloyati</option>
+                    <option value="Navoiy">Navoiy viloyati</option>
+                    <option value="Qashqadaryo">Qashqadaryo viloyati</option>
+                    <option value="Samarqand">Samarqand viloyati</option>
+                    <option value="Sirdaryo">Sirdaryo viloyati</option>
+                    <option value="Surxondaryo">Surxondaryo viloyati</option>
+                </select>
+                <button onclick="fetchdata()" class="btn-1" role="button">Bosing</button>
+            </div>
+            <a href="./index.html" class="prayer-icon"><img class="logos-he" src="./assents/svg/icon.png" alt=""></a>
+        </nav>
+        <div class="nmadr-2">
+            <div class="cityName">
+                <h1 id="cityName"></h1>
+            </div>
+
+            <div class="time">
+                <h2 id="tong_saharlik"></h2>
+                <h2 id="peshin"></h2>
+                <h2 id="asr"></h2>
+                <h2 id="shom_iftor"></h2>
+                <h2 id="hufton"></h2>
+            </div>
+            <h1 class="hadis">«Quyosh og'ishidan to tun qorong'usigacha namozni mukammal ado qiling va tonggi o'qishni
+                (bomdod
+                namozini) ham
+                (ado qiling). Zero, tonggi o'qish (farishtalar) hozir bo'ladigan (namoz)dir. Tunda (bir qismida)
+                uyg'onib
+                o'zingiz uchun tahajjud (nafl) namozini o'qing! Shoyadki, Rabbingiz Sizni (Qiyomat kunida) maqtovli
+                (shafoat
+                qiladigan maqomda) tiriltirsa» (Al-Isro, 78-79-oyatlar).</h1>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/prayer.js"></script>
+</body>
+
+</html>

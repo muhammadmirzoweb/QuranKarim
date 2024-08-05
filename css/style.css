@@ -6,8 +6,9 @@
 }
 
 body {
-    background-color: #1a7431;
+    background-color: gray;
     color: white;
+    text-shadow: 0px 0px 8px #000000;
 }
 
 .container {
@@ -16,7 +17,7 @@ body {
 }
 
 nav {
-    background-color: #1a7431;
+    background-color: gray;
     display: flex;
     align-items: center;
     padding-top: 15px;
@@ -29,7 +30,7 @@ nav {
 
 nav .arabic {
     text-align: end;
-    padding-left: 390px;
+    padding-left: 350px;
     font-family: "Noto Naskh Arabic", serif;
     font-size: 45px;
 }
@@ -40,12 +41,19 @@ nav img {
     width: 90px;
 }
 
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    margin: 0 auto;
+}
+
 ol {
     list-style: none;
 }
 
 li {
-    background-color: #1a7431;
+    background-color: gray;
     margin: 10px 0px;
     padding: 10px 15px;
     box-shadow: 0px 0px 30px rgba(211, 211, 211, 0.4);
@@ -57,9 +65,9 @@ li {
 
 .card {
     border-radius: 15px;
-    border: 2px solid black;
+    border: 1px solid black;
     color:white;
-    background-color:#aad576;
+    background-color: white;
     margin-top: 5px;
     font-family: "Roboto", sans-serif;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -96,7 +104,7 @@ a {
 }
 
 audio {
-    background-color: #217536;
+    background-color: gray;
     width: 80%;
     position: fixed;
     right: 10%;
@@ -110,7 +118,7 @@ audio {
 }
 
 audio::-webkit-media-controls-panel {
-    box-shadow: #1e8a39 0px 30px 60px -10px inset, #1a7431 0px 18px 36px -30px inset;   
+    box-shadow: gray 0px 30px 60px -10px inset, gray 0px 18px 36px -30px inset;   
 }
 
 @media only screen and (max-width: 767px) {
@@ -179,7 +187,7 @@ audio::-webkit-media-controls-panel {
     }
     nav .arabic {
         padding-left: 0px;
-        font-size: 25px;
+        font-size: 28px;
         width: 50%;
     }
     nav img {
@@ -193,5 +201,9 @@ audio::-webkit-media-controls-panel {
         position: fixed;
         right: 0 ;
         height: 80px;
+    }
+
+    .prayer-icon {
+        margin-left: 50px;
     }
 }
